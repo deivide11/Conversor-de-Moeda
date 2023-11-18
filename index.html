@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Aula 1 - Convertor de Moeda</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="page-title">
+          Conversor de moedas
+        </h1>
+        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo" alt="">
+      </div>
+      <div class="img-alura">
+        <a href="https://alura.com.br/" target="_blank">
+          <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+          <img src="https://caelum-online-public.s3.amazonaws.com/assets-imersaodev/Convers%C3%A3o+1.png">
+        </a>
+      </div>
+
+        <div class="elemento">
+          <select name="moeda" onchange="placeholder()" id="moeda">
+            <option onclick="escolha()" value="moeda">Escolha uma moeda</option>
+            <option value="dolar">Dolar</option>
+            <option value="euro">Euro</option>
+            <option value="libra">Libra</option>
+          </select>
+
+          <input type="text" id="valor" placeholder="Digite o valor">
+          <input type="text" id="qntMoeda" placeholder="Digite a quantidade">
+          <button onclick="converter()">Converter</button>
+        </div>
+            <h3 id="resultado"></h3>
+      </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
